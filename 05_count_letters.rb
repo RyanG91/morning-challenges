@@ -16,8 +16,8 @@
 
 def count_letters (string)
   result = {} # You'll need an empty hash to get started!
-  
-  # Your code here
+
+  string.each_char { |c| result[c] = string.count(c) }
 
   result # return the hash
 end
