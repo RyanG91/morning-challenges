@@ -24,5 +24,18 @@
 #
 
 def nthFibonacci (n)
-  # Your code here    
+  if n == 0
+      return 0
+  end
+  if n == 1
+      return 1
+  end
+  if n >= 2
+      return nthFibonacci(n-1) + (nthFibonacci(n-2))
+  end
 end
+
+# raise "nthFibonacci not defined for negative numbers" if n < 0
+# new, old = 1, 0
+# n.times {new, old = new + old, new}
+# old
