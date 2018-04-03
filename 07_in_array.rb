@@ -18,4 +18,10 @@
 #Try writing it on a whiteboard or paper first
 def in_array (needle, haystack)
   # Your code here
+  haystack.each do |word|
+  if word == needle
+    return true
+  end
+end
+return false
 end
